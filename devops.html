@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Learning Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DevOps Learning Hub</h1>
+        <nav>
+            <a href="#basic">Basic</a>
+            <a href="#intermediate">Intermediate</a>
+            <a href="#advanced">Advanced</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="basic">
+            <h2>Basic DevOps</h2>
+            <p>Start here: Learn fundamentals like version control, basic scripting, and cloud basics.</p>
+            <ul>
+                <li><a href="https://git-scm.com/doc" target="_blank">Git Documentation</a></li>
+                <li><a href="https://www.docker.com/get-started" target="_blank">Docker Basics</a></li>
+                <li><a href="https://aws.amazon.com/getting-started/" target="_blank">AWS Free Tier</a></li>
+            </ul>
+        </section>
+        
+        <section id="intermediate">
+            <h2>Intermediate DevOps</h2>
+            <p>Build on basics: CI/CD pipelines, automation, and monitoring.</p>
+            <ul>
+                <li><a href="https://jenkins.io/doc/" target="_blank">Jenkins Tutorials</a></li>
+                <li><a href="https://kubernetes.io/docs/tutorials/" target="_blank">Kubernetes Basics</a></li>
+                <li><a href="https://prometheus.io/docs/introduction/overview/" target="_blank">Prometheus Monitoring</a></li>
+            </ul>
+        </section>
+        
+        <section id="advanced">
+            <h2>Advanced DevOps</h2>
+            <p>Go pro: Infrastructure as Code, security, and scaling.</p>
+            <ul>
+                <li><a href="https://www.terraform.io/docs" target="_blank">Terraform IaC</a></li>
+                <li><a href="https://www.ansible.com/resources/get-started" target="_blank">Ansible Automation</a></li>
+                <li><a href="https://istio.io/latest/docs/" target="_blank">Istio Service Mesh</a></li>
+            </ul>
+        </section>
+        
+        <section id="quiz">
+            <h2>Quick Quiz</h2>
+            <p>Test your knowledge!</p>
+            <div id="quiz-container">
+                <p>What is CI/CD? <button onclick="showAnswer('Continuous Integration/Continuous Deployment')">Show Answer</button></p>
+                <p id="answer"></p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 DevOps Learning Hub. Built with HTML/CSS/JS.</p>
+    </footer>
+    
+    <script>
+        function showAnswer(answer) {
+            document.getElementById('answer').textContent = answer;
+        }
+    </script>
+</body>
+</html>
